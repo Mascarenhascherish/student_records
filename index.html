@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Management</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        #error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Records Management</h1>
+    <form action="backend.js" id="StudentForm">
+        <label for="StudentId">Student ID</label>
+        <input type="text" id="StudentId" >
+        <br>
+        <br>
+        <label for="StudentName">Student Name</label>
+        <input type="text" id="StudentName" >
+        <br>
+        <br>
+        <label for="StudentAge">Student Age</label>
+        <input type="number" id="StudentAge" >
+        <br>
+        <br>
+        <button type="submit">Add Student</button>
+    </form>
+    <h2>Student Records:</h2>
+    <div id="error"></div>
+    <ul id="StudentList"></ul>
+    <script src="script.js"></script>
+    
+</body>
+</html>
